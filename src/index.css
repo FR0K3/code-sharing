@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --text-small-heading: 32px;
+  --text-large-heading: 40px;
+  --text-small-button: 10px;
+
+  --color-sky: #406aff;
+  --color-dark: #121826;
+  --color-gray-light: #ced6e1;
+  --color-gray-dark: #364153;
+  --color-dark-btn: #68748a;
+  --color-dark-vs: #1e1e1e;
+}
+
+@layer base {
+  html {
+    background-image: linear-gradient(to bottom right,
+        rgba(183, 135, 245, 1),
+        rgba(116, 62, 228, 1));
+    background-repeat: no-repeat;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+  }
+}
