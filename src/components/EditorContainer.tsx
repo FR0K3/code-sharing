@@ -120,7 +120,7 @@ export default function EditorContainer() {
             :
             <MonacoEditor
               className="w-full h-full pt-4"
-              height="735px"
+              height="600px"
               width="100%"
               loading={<Spinner />}
               defaultLanguage="html"

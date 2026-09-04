@@ -13,10 +13,10 @@ function App() {
         alt="Background image"
       />
 
-      <div className="relative z-10 pt-12 pb-28 w-full">
+      <div className="relative z-10 pt-9 pb-28 w-full">
         <div className="flex flex-col items-center justify-center gap-2">
           <img
-            className="w-32 mb-4"
+            className="w-28 mb-4"
             src={noteCodeLogo}
             alt="NoteCode Logo"
           />
