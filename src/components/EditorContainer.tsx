@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router";
 import MonacoEditor from '@monaco-editor/react';
+import toast from "react-hot-toast";
 import Spinner from "./Spinner";
 import Dropdown, { type Option } from "./Dropdown";
 import shareIcon from "../assets/icons/Share.svg"
 import initialHtml from '../template.html?raw';
 import ShareLink from "./ShareLink";
-import { useNavigate, useParams } from "react-router";
 import { createSnippet, getSnippet } from "../services/snippets.service";
-import toast from "react-hot-toast";
 import type { CreateSnippet } from "../schemas/snippets.schema";
 
 export default function EditorContainer() {
