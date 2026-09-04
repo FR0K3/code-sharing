@@ -11,6 +11,7 @@ function App() {
         src={background}
         draggable={false}
         alt="Background image"
+        fetchPriority="high"
       />
 
       <div className="relative z-10 pt-9 pb-28 w-full">
