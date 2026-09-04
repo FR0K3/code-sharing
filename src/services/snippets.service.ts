@@ -12,13 +12,13 @@ export const createSnippet = async (formData: CreateSnippet) => {
 
   } catch (error) {
     if (error instanceof ZodError)
-      throw new ApiError("Respuesta inválida del servidor");
+      throw new ApiError("Invalid response from server");
 
     if (isAxiosError(error)) {
       const message = error.response?.data?.message;
 
       throw new ApiError(
-        typeof message === "string" ? message : "No se pudo crear el snippet",
+        typeof message === "string" ? message : "Snippet could not be created",
         error.response?.status
       );
     }
@@ -38,13 +38,13 @@ export const getSnippet = async (id: string) => {
     if (axios.isCancel(error)) throw error;
 
     if (error instanceof ZodError)
-      throw new ApiError("Respuesta inválida del servidor");
+      throw new ApiError("Invalid response from server");
 
     if (isAxiosError(error)) {
       const message = error.response?.data?.message;
 
       throw new ApiError(
-        typeof message === "string" ? message : "No se pudo obtener el snippet",
+        typeof message === "string" ? message : "Snippet could not be obtained",
         error.response?.status
       );
     }
